@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Santuy Bali Tour — Website Satu Halaman</title>
+  <!-- Tailwind via CDN (cepat untuk prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Website sederhana gratis untuk usaha tour di Bali" />
+  <style>
+    /* Simple gradient button focus outline */
+    .focus-ring:focus { outline: 3px solid rgba(99,102,241,0.25); outline-offset: 2px; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-sky-50 to-white text-slate-800 antialiased">
+  <header class="max-w-5xl mx-auto p-6 flex items-center justify-between">
+    <a href="#hero" class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-2xl bg-[url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=')] bg-cover bg-center shadow-lg"></div>
+      <div>
+        <h1 class="text-xl font-extrabold">SANTUY BALI TOUR</h1>
+        <p class="text-sm text-slate-500">Jelajahi keindahan Pulau Dewata</p>
+      </div>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm text-slate-600">
+      <a href="#about" class="hover:text-slate-900">Tentang</a>
+      <a href="#paket" class="hover:text-slate-900">Paket</a>
+      <a href="#galeri" class="hover:text-slate-900">Galeri</a>
+      <a href="#kontak" class="hover:text-slate-900">Kontak</a>
+    </nav>
+    <a href="#kontak" class="hidden md:inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:scale-105 transition">Pesan Sekarang</a>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 pb-20">
+    <!-- Hero -->
+    <section id="hero" class="rounded-2xl overflow-hidden shadow-lg">
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="Bali" class="w-full h-72 object-cover sm:h-96" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        <div class="absolute left-6 bottom-6 text-white">
+          <h2 class="text-3xl sm:text-4xl font-extrabold">Rasakan Pesona Bali — Mudah & Terjangkau</h2>
+          <p class="mt-2 text-sm sm:text-base max-w-xl">Paket wisata lengkap, pemandu ramah, transportasi nyaman. Mulai petualangan Anda hari ini!</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#paket" class="bg-white text-indigo-700 px-4 py-2 rounded-lg font-semibold focus-ring">Lihat Paket</a>
+            <a href="#kontak" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold focus-ring">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-bold">Tentang SANTUY BALI TOUR</h3>
+        <p class="mt-3 text-slate-600">Kami membawa Anda ke tempat-tempat paling Instagramable di Bali: pura, sawah terasering, pantai tersembunyi, dan spot budaya. Tur ramah keluarga, tur petualangan, hingga paket honeymoon — semuanya dirancang agar pengalaman Anda tak terlupakan.</p>
+        <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <li class="p-3 bg-white rounded-lg shadow">Transportasi + Sopir berpengalaman</li>
+          <li class="p-3 bg-white rounded-lg shadow">Pemandu lokal berlisensi</li>
+          <li class="p-3 bg-white rounded-lg shadow">Paket fleksibel & harga transparan</li>
+          <li class="p-3 bg-white rounded-lg shadow">Booking mudah & konfirmasi cepat</li>
+        </ul>
+      </div>
+      <div class="bg-[url('https://images.unsplash.com/photo-1507608869274-2c1b0a1f5f9e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=')] bg-cover bg-center h-48 rounded-xl shadow"></div>
+    </section>
+
+    <!-- Packages -->
+    <section id="paket" class="mt-10">
+      <h3 class="text-2xl font-bold">Paket Populer</h3>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <article class="bg-white rounded-xl p-4 shadow">
+          <h4 class="font-semibold">Paket Pura & Budaya</h4>
+          <p class="text-sm text-slate-600 mt-2">Kunjungi pura ikonik, upacara budaya (jika tersedia), dan belajar tentang tradisi lokal.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-bold">Rp 400.000</span>
+            <a href="#kontak" class="text-indigo-600 font-semibold">Pesan</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-xl p-4 shadow">
+          <h4 class="font-semibold">Paket Pantai & Snorkel</h4>
+          <p class="text-sm text-slate-600 mt-2">Snorkeling di spot terbaik, santai di pantai, dan makan siang seafood.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-bold">Rp 550.000</span>
+            <a href="#kontak" class="text-indigo-600 font-semibold">Pesan</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-xl p-4 shadow">
+          <h4 class="font-semibold">Paket Sunrise Trekking</h4>
+          <p class="text-sm text-slate-600 mt-2">Trekking pagi ke puncak untuk melihat matahari terbit (termasuk sarapan box).</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-bold">Rp 350.000</span>
+            <a href="#kontak" class="text-indigo-600 font-semibold">Pesan</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="galeri" class="mt-10">
+      <h3 class="text-2xl font-bold">Galeri</h3>
+      <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <img src="https://images.unsplash.com/photo-1502772066655-38a4a3b2d5f9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="galeri1" class="rounded-lg w-full h-40 object-cover shadow" />
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="galeri2" class="rounded-lg w-full h-40 object-cover shadow" />
+        <img src="https://images.unsplash.com/photo-1494475673543-6e99b7b3b6f6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="galeri3" class="rounded-lg w-full h-40 object-cover shadow" />
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="galeri4" class="rounded-lg w-full h-40 object-cover shadow" />
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="kontak" class="mt-10 bg-indigo-600 text-white rounded-xl p-6 shadow-lg">
+      <h3 class="text-2xl font-bold">Hubungi Kami</h3>
+      <p class="mt-2 text-sm">Tertarik ikut tur? Kirim pesan atau telepon kami.</p>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div>
+          <p class="text-sm">Email</p>
+          <a href="mailto:balitour.santuy@gmail.com.example" class="font-semibold">balitour.santuy@gmail.com.example</a>
+        </div>
+        <div>
+          <p class="text-sm">Telepon / WhatsApp</p>
+          <a href="tel:+6285739330329" class="font-semibold">+62 85739330329</a>
+        </div>
+        <div>
+          <p class="text-sm">Lokasi</p>
+          <p class="font-semibold">Denpasar, Bali</p>
+        </div>
+      </div>
+      <form class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3" onsubmit="event.preventDefault(); window.location='#'; alert('Terima kasih! Kami akan menghubungi Anda.')">
+        <input required class="p-3 rounded-lg" placeholder="Nama" />
+        <input required class="p-3 rounded-lg" placeholder="Email atau Nomor WA" />
+        <textarea required class="sm:col-span-2 p-3 rounded-lg" rows="4" placeholder="Pesan / Permintaan"></textarea>
+        <button class="sm:col-span-2 bg-white text-indigo-600 font-semibold px-4 py-2 rounded-lg">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-center text-sm text-slate-500">&copy; <span id="year"></span> SANTUY BALI TOUR — Semua hak dilindungi.</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+<!--
+  PETUNJUK SINGKAT:
+  1) File ini adalah HTML satu halaman. Simpan sebagai `index.html`.
+  2) Untuk langsung menerbitkan gratis:
+     - GitHub Pages: buat repo, unggah index.html ke branch `gh-pages` atau `main` dan aktifkan Pages.
+     - Netlify: seret & lepas file ke dashboard Netlify (drag-and-drop) atau hubungkan repo Git.
+     - Vercel: hubungkan repo Git atau gunakan unggah file.
+  3) Ganti kontak, gambar, dan teks sesuai kebutuhan.
+  4) Jika ingin CMS sederhana, pertimbangkan Netlify CMS atau Google Forms untuk pemesanan.
+-->
